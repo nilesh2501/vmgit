@@ -1,0 +1,289 @@
+<!doctype html>
+
+<html class="">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="login.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="page.css" rel="stylesheet" type="text/css">
+  <link href="menu.css" type="text/css" rel="stylesheet">
+
+<script src="respond.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="div1" class="fluid">
+  	   <header class="fluid headr zeroMargin_desktop">
+      <div class="fluid header_logo zeroMargin_desktop">
+        <p><img src="image/logo-2.jpg"  alt="" width="330" height="134"/></p>
+      </div><p>&nbsp;</p>
+          <div class="fluid header_list" style="margin-left:20%"">
+            <p><br>
+            </p>
+            <ul id="css3menu1" class="topmenu">
+          <li class="switch">
+            <label onClick="" for="css3menu-switcher"></label>
+          </li>
+          <li class="topmenu"><a href="#" style="height:16px;line-height:16px;top:auto">Home</a></li>
+          <li class="topmenu"><a href="#" style="height:16px;line-height:16px;"><span>About</span></a></li>
+          <li class="topmenu"><a href="#" style="height:16px;line-height:16px;"><span>Tracking</span></a></li>
+          <li class="topmenu"><a href="#" style="height:16px;line-height:16px;">Contact</a></li>
+          <li class="topmenu"><a href="#" style="height:16px;line-height:16px;">Login</a></li>
+        </ul>
+      </div></header>
+    
+  </div>
+  <div class="fluid login_div2">
+  
+      <div class="container">    
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="forget.jsp">Forgot password?</a></div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                            
+                        <form id="loginform" class="form-horizontal" role="form" action="abc.html">
+                                    
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">                                        
+                                    </div>
+                                
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                    </div>
+                                    
+
+                                
+                            <div class="input-group">
+                                      <div class="checkbox">
+                                        <label>
+                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <!-- Button -->
+
+                                    <div class="col-sm-12 controls">
+                                      <button type="submit" class="btn btn-success">Login</button>
+                                      
+                                    </div>
+                                </div>
+                               </form>
+
+                                <div class="form-group">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                            Don't have an account! 
+                                        <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
+                                            Sign Up Here
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>    
+                              
+
+
+
+                        </div>                     
+                    </div>  
+        </div>
+        <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign Up</div>
+                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Sign In</a></div>
+                        </div>  
+                        <div class="panel-body" >
+                            
+                            <form id="signupform" class="form-horizontal" role="form" action="Registration">
+                                
+                                <div id="signupalert" style="display:none" class="alert alert-danger">
+                                    <p>Error:</p>
+                                    <span></span>
+                                </div>
+                                    
+                                
+                                  
+                               
+                                <div class="form-group">
+                                    <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="company" class="col-md-3 control-label">Company</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="company" placeholder="company">
+                                    </div>
+                                </div>
+                                
+                                 <div class="form-group">
+                                    <label for="email" class="col-md-3 control-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="email" class="form-control" name="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                
+                                 <div class="form-group">
+                                    <label for="phone" class="col-md-3 control-label">Phone Number</label>
+                                    <div class="col-md-9">
+                                        <input type="tel" name="phone"  class="form-control" placeholder="Phone">
+                                    </div>
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Password</label>
+                                    <div class="col-md-9">
+                                        <input type="password" class="form-control" name="passwd" placeholder="Password">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="confirm-password" class="col-md-3 control-label">Confirm Password</label>
+                                    <div class="col-md-9">
+                                        <input type="password" class="form-control" name="confirm-passwd" placeholder="Confirm Password">
+                                    </div>
+                                </div>
+                                    
+                               
+
+                                <div class="form-group">
+                                    <!-- Button -->                                        
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                       <!-- <span style="margin-left:8px;">or</span>  -->
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                            </form>
+                         </div>
+                    </div>
+
+               
+               
+                
+         </div> 
+    </div>
+    
+  </div>
+</div>
+<div class="gridContainer-fluid clearfix" style="background-color:#f4f4f4;">
+   <div class="gridContainer clearfix">
+  <div class="fluid div2_4">
+    <section style="margin:3%;">
+      <p>   PickParcel.com is India's first and cheapest online courier booking service, offering the simplest way to book a parcel delivery service online within India. You book and choose which of our premium carriers (eg. Blue Dart, DTDC etc) you'd like to collect and deliver your item. You pay for the service online and it will be collected from your place, then delivered. Simple! </p>
+     </section>
+  </div>
+  </div>
+  </div>
+  <div class="gridContainer-fluid clearfix" style="background-color: #7AAC38; opacity: 0.9;">
+   <div class="gridContainer clearfix">
+  <div class="fluid div3">
+    <p>&nbsp;</p>
+    <div class="fluid div3_1">
+     <ul class="fluid fluidList div3_1_1">
+             <li>Easy Courier.com</li>
+                 <hr>
+             <li>Home</li>
+              <li>About Us</li>
+             <li>Service</li>
+              <li>Contact Us</li>
+             <li>Testomonials</li>
+             <li></li>
+     </ul>
+    </div>
+    <div class="fluid div3_1">
+    	 <ul class="fluid fluidList div3_2_1">
+         	<li>Our Courier</li>
+                        <hr>
+                        <li>Aramex Couriers</li>
+                        <li>Aramex Couriers
+                        <li>The Professional Couriers</li>
+                        <li>Skynet Worldwide Express</li>
+                        <li>Overseas Express</li>
+                        <li>FedEx Express</li>
+                        <li>Bombino Couriers</li>
+                        <li></li>
+         </ul> 
+    </div>
+    <div class="fluid div3_1">
+    	 <ul class="fluid fluidList div3_3_1">
+          <li>Our Courier</li>
+                        <hr    
+                        <li>UPS Courier Services</li>
+                        <li>Gati KWE Services</li>
+                        <li>VRL Courier Services</li>
+                        <li>Orbit Worldwide Express</li>
+                        <li>Flyking Courier Services</li>
+                        <li>Madhur Courier Services</li>
+                        <li>Delhivery Couriers</li>
+                        <li></li>
+         
+         </ul> 
+    </div>
+    <div class="fluid div3_2">
+    	 Follow Us
+                            <hr>
+                            <p><a id="menu" target="_blank" title="PickParcel Facebook" href="">
+                              <img src="image/facebook.png" alt="Image" style="width:35px;height:35px;">
+                              </a>
+                              <a id="menu" target="_blank" title="PickParcel Twitter" href="">
+                                <img src="image/twitter.png" alt="Image" style="width:35px;height:35px;">
+                              </a>
+                              <a id="menu"  target="_blank" title="PickParcel Google Plus" href="">
+                                <img src="image/googleplus.png" alt="Image" style="width:35px;height:35px;">                               
+                              </a>                      
+                              <a id="menu"  target="_blank" title="PickParcel Youtube" href="">
+                                <img src="image/youtube.png" alt="Image" style="width:35px;height:35px;">
+                              </a>         
+                              
+                            </p>
+                           
+                            Featured in
+                     <hr>
+                     <br>
+                           <img src="image/nbw-logo.png" alt="Image" style="width:auto;height:auto;">  
+                           &nbsp;&nbsp;
+                           <img src="image/ys-logo.png" alt="Image" style="width:auto;height:auto;">                               
+
+    </div>
+  
+    <div class="fluid div4">
+  	<hr>
+                    <pre style="background-color: #7AAC38; opacity: 0.9; border-style:none;">Copyright © 2014 PickParcel.com. All Rights Reserved.                           Terms & Conditions | Privacy Policy | Refund Policy</pre>
+  </div>
+  </div>
+  
+ </div>
+</div>
+
+</body>
+</html>
